@@ -6,14 +6,16 @@ using System.Web;
 
 namespace webEval.Models
 {
+    using System.ComponentModel.DataAnnotations;
+    public enum TypeGender
+    {
+
+        Male,
+        Female,
+
+    }
     public class Student
     {
-        public enum TypeGender {
-
-            Male,
-            Female,
-
-        }
 
         [Key]
         public int StudentID { get; set; }
